@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de desenhos digitais por Gil Almeida.">
+    <meta name="keywords" content="desenho digital, galeria, Gil Almeida">
+    <meta name="author" content="Gil Almeida">
+    <title>Desenho Digital - Gil Almeida Arte</title>
+    <link rel="icon" href="assets/imagens/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/imagens/logo-dark.png" alt="Logo Gil Almeida Arte" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active"><span>Galeria</span><i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="galeria-manual.html">Desenho Manual</a></li>
+                        <li><a href="galeria-pessoa.html">Desenho de Pessoa</a></li>
+                        <li><a href="galeria-rosto.html">Rosto</a></li>
+                        <li><a href="galeria-digital.html" class="active">Desenho Digital</a></li>
+                        <li><a href="galeria-capa.html">Capa</a></li>
+                        <li><a href="galeria-livros.html">Ilustrações para Livros</a></li>
+                        <li><a href="galeria-personagens.html">Personagens</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="pagar.html">Pagar</a></li>
+                <li><a href="acompanhar.html">Acompanhe seu Pedido</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <button id="theme-toggle" aria-label="Ativar tema escuro"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="container">
+                <h1 class="section-title">Desenho Digital</h1>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <a href="assets/imagens/digital1.jpg" data-fancybox="gallery-digital" data-caption="Desenho Digital 1">
+                            <img src="assets/imagens/digital1.jpg" alt="Desenho Digital 1" onerror="this.src='assets/imagens/placeholder.jpg'; console.error('Erro ao carregar imagem: assets/imagens/digital1.jpg')">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="assets/imagens/digital2.jpg" data-fancybox="gallery-digital" data-caption="Desenho Digital 2">
+                            <img src="assets/imagens/digital2.jpg" alt="Desenho Digital 2" onerror="this.src='assets/imagens/placeholder.jpg'; console.error('Erro ao carregar imagem: assets/imagens/digital2.jpg')">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="assets/imagens/digital3.jpg" data-fancybox="gallery-digital" data-caption="Desenho Digital 3">
+                            <img src="assets/imagens/digital3.jpg" alt="Desenho Digital 3" onerror="this.src='assets/imagens/placeholder.jpg'; console.error('Erro ao carregar imagem: assets/imagens/digital3.jpg')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer aria-label="Rodapé">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>contato@gilalmeida.art.br</p>
+                <p>+55 (61) 99346-1625</p>
+            </div>
+            <div class="footer-column">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/gilalmeidaarte" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://artstation.com/gilalmeida" target="_blank" aria-label="ArtStation"><i class="fab fa-artstation"></i></a>
+                    <a href="https://linkedin.com/in/gilalmeida" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Localização</h3>
+                <p>São Paulo, Brasil</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Gil Almeida Arte</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <a href="https://wa.me/5561993461625?text=Oi%20Gil!%20Quero%20falar%20sobre%20um%20desenho!" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM carregado - galeria-digital.html');
+            const loaderWrapper = document.querySelector('.loader-wrapper');
+            const hideLoader = () => {
+                console.log('Tentando esconder loader');
+                if (loaderWrapper) {
+                    console.log('Loader encontrado, adicionando .hidden');
+                    loaderWrapper.classList.add('hidden');
+                } else {
+                    console.warn('Loader não encontrado');
+                }
+            };
+            console.log('Configurando timeout e evento load');
+            setTimeout(() => {
+                console.log('Timeout de 2s disparado');
+                hideLoader();
+            }, 2000);
+            window.addEventListener('load', () => {
+                console.log('Evento load disparado');
+                hideLoader();
+            });
+
+            // Tema escuro
+            const isDarkMode = localStorage.getItem('theme') === 'dark';
+            const themeToggle = document.getElementById('theme-toggle');
+            if (isDarkMode && themeToggle) {
+                document.body.classList.add('dark-mode');
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                themeToggle.setAttribute('aria-label', 'Ativar tema claro');
+            }
+
+            // Forçar cor dos links e seta
+            document.querySelectorAll('.nav-links li a').forEach(link => {
+                link.style.color = isDarkMode ? '#ffffff' : '#333';
+            });
+            document.querySelectorAll('.dropdown-arrow').forEach(arrow => {
+                arrow.style.color = isDarkMode ? '#ffffff' : '#333';
+            });
+
+            // Menu mobile
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', !isExpanded);
+                    menuToggle.setAttribute('aria-label', isExpanded ? 'Abrir menu' : 'Fechar menu');
+                    navLinks.classList.toggle('active');
+                    document.body.classList.toggle('blur-background');
+                    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+                });
+            }
+
+            // Fechar menu ao clicar em links
+            document.querySelectorAll('.nav-links a:not(.dropdown-toggle)').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks && menuToggle) {
+                        navLinks.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.setAttribute('aria-label', 'Abrir menu');
+                        document.body.classList.remove('blur-background');
+                        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+                    }
+                });
+            });
+
+            // Dropdown
+            document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+                toggle.addEventListener('click', e => {
+                    e.preventDefault();
+                    const dropdown = toggle.parentElement;
+                    const isActive = dropdown.classList.contains('active');
+                    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+                    if (!isActive) dropdown.classList.add('active');
+                });
+            });
+
+            document.addEventListener('click', e => {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+                }
+            });
+
+            // Alternar tema
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    document.body.classList.toggle('dark-mode');
+                    const isDarkMode = document.body.classList.contains('dark-mode');
+                    themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+                    themeToggle.setAttribute('aria-label', isDarkMode ? 'Ativar tema claro' : 'Ativar tema escuro');
+                    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+                    document.querySelector('.logo-img').src = isDarkMode ? 'assets/imagens/logo-light.png' : 'assets/imagens/logo-dark.png';
+                    document.querySelectorAll('.nav-links li a').forEach(link => {
+                        link.style.color = isDarkMode ? '#ffffff' : '#333';
+                    });
+                    document.querySelectorAll('.dropdown-arrow').forEach(arrow => {
+                        arrow.style.color = isDarkMode ? '#ffffff' : '#333';
+                    });
+                });
+            }
+
+            // Botão Voltar ao topo
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                backToTop.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+                window.addEventListener('scroll', () => {
+                    backToTop.classList.toggle('visible', window.scrollY > 300);
+                    const items = document.querySelectorAll('.gallery-item');
+                    items.forEach(item => {
+                        const rect = item.getBoundingClientRect();
+                        if (rect.top < window.innerHeight * 0.8) {
+                            item.classList.add('visible');
+                        }
+                    });
+                });
+            }
+
+            // Fancybox
+            Fancybox.bind('[data-fancybox]', {
+                Image: { zoom: false, maxWidth: 1200, maxHeight: 600 }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
